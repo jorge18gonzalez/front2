@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Sena</title>
+</head>
+<body>
+    <app-nav></app-nav>
+   
+        <div style="width: 250px; position: relative;left: 500px;" class="pt-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Login
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="from-group">
+                            <label for="">Usuario</label>
+                            <input type="text" placeholder="usuario" class="form-control">
+                        </div>
+                        <div class="from-group">
+                            <label for="">Contrasena</label>
+                            <input type="password" placeholder="contrasena" class="form-control">
+                        </div>
+                        <div class="from-group pt-3">
+                            <button type="button" class="btn btn-success" [routerLink]="['/anuncios/listar']"
+                                routerLinkActive="router-link-active">login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div *ngIf="load">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>Gimnasio Sena, Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
