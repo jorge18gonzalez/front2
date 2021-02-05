@@ -20,8 +20,11 @@ export class LoginComponent implements OnInit {
 
   //login
 
+
   ingresar(){
-    this.login.ingresar()
+    setTimeout(() => {
+      this.login.ingresar()
+    }, 4000);
   }
 
 }
