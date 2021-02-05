@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HammerGestureConfig } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +18,8 @@ export class LoginService{
     
     if (this.usuario == "jorgetgonzalez3@gmail.com" && this.contra == "1234567") {
       console.log('logeado')
+      RouterLink['/anuncios']
+      
     }else{
       console.log('error')
     }
