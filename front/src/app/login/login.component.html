@@ -7,7 +7,7 @@
 </head>
 <body>
     <app-nav></app-nav>
-   
+   <div *ngIf="load">
         <div style="width: 250px; position: relative;left: 500px;" class="pt-3">
             <div class="card text-center">
                 <div class="card-header">
@@ -34,7 +34,8 @@
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
-        </div>
+    </div>
+    </div>
     <footer>
         <p>Gimnasio Sena, Copyright &copy; 2020</p>
     </footer>
