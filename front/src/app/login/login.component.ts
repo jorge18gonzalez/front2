@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../login.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,8 @@ import {LoginService} from '../login.service';
 })
 export class LoginComponent implements OnInit {
   load:boolean = true;
+  router:Router;
+  
 
   constructor(
 
@@ -21,11 +24,18 @@ export class LoginComponent implements OnInit {
   //login
 
   logeo(){
+
+    this.load = false;
+  
     setTimeout(() => {
-      this.login.ingresar()
+    
+      this.load = true;
+    
     }, 4000);
 
-  
+    this.router.navigate(['/test/listar']);
+    
+   
 
 
   }

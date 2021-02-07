@@ -18,7 +18,7 @@ export class LoginService{
     
     if (this.usuario == "jorgetgonzalez3@gmail.com" && this.contra == "1234567") {
       console.log('logeado')
-      RouterLink['/anuncios']
+     
       
     }else{
       console.log('error')
